@@ -52,12 +52,12 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  var findItem = [];
+  //var findItem = [];
   for (var i=0; i< cart.length;i++){
     if (item === cart[i].itemName) {
-      findItem.push(cart[i])
+      //findItem.push(cart[i])
       cart.splice(i,1)
-    } else if (findItem.length === 0) {
+    } else {
       return 'That item is not in your cart.'
     }
   }
